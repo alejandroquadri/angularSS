@@ -19,9 +19,10 @@ angular.module('NoteWrangler').config(function($routeProvider){ //se puede usar 
       controller:"NotesShowController"
     })
 
-    .when('/notes:id/edit',{
+    .when('/notes/:id/edit',{
       templateUrl:"assets/templates/notes/edit.html",
       controller:"NotesEditController"
-    });
+    })
+
 
 });
