@@ -15,6 +15,6 @@
     <textarea class="form-control" type="text" id="content" name="content" ng-model="note.content"></textarea>
   </fieldset>
 
-  <input type="submit" class="btn btn-defautl" ng-click="saveNote(note)">
+  <input type="submit" class="btn btn-defautl" ng-click="saveNote(note)" ng-disabled="isSubmitting">
 
 </form>
