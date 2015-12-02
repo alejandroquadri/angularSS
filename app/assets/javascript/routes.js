@@ -31,8 +31,8 @@ angular.module('NoteWrangler').config(function($routeProvider){ //se puede usar 
 
     .when('/users/:id',{
       templateUrl:"assets/templates/users/show.html",
-      controller:"UsersIndexController"
-    })
+      controller:"UsersShowController"
+    });
 
 
 });
