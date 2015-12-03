@@ -11,6 +11,11 @@
   </fieldset>
 
   <fieldset class="form-group">
+    <label for="title">User</label>
+    <select ng-options="user.id as user.name for user in users" ng-model="note.userId"></select>
+  </fieldset>
+
+  <fieldset class="form-group">
     <label for="description">Description</label>
     <input class="form-control" type="description" id="title" name="description" ng-model="note.description">
   </fieldset>
