@@ -6,6 +6,11 @@
   </fieldset>
 
   <fieldset class="form-group">
+    <label for="title">Categroy</label>
+    <select ng-options="category.id as category.name for category in categories" ng-model="note.categroyId"></select>
+  </fieldset>
+
+  <fieldset class="form-group">
     <label for="description">Description</label>
     <input class="form-control" type="description" id="title" name="description" ng-model="note.description">
   </fieldset>
